@@ -27,6 +27,8 @@ php bin/console doctrine:migrations:migrate
 
 php bin/console doctrine:fixtures:load (Para inserir dados de teste no banco de dados, ou se preferir pode adicionar manualmente acessando os endpoints)
 
+php bin/console lexik:jwt:generate-keypair
+
 php -S localhost:8000 -t public
 
 - npm install
