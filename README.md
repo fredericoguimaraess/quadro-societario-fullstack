@@ -10,8 +10,10 @@ Desenvolvi um frontend para auxiliar no teste da aplicação
 ## Instalação
 
 Login para fins de teste:
-admin@example.com
-password
+
+login: admin@example.com
+
+senha: password
 
 - Inicie a aplicação rodando os comandos a seguir na raíz do projeto:
 
