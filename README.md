@@ -24,7 +24,7 @@ php bin/console doctrine:fixtures:load (Para inserir dados de teste no banco de 
 
 php -S localhost:8000 -t public
 
-## Estou utilizando o token JWT para realizar a autenticação do usuário no sistema, pode ser que seja necessário você adequar os valores referentes ao seu openSSL e sua pass_phrase no seu arquivo lexik_jwt_authentication
+# Estou utilizando o token JWT para realizar a autenticação do usuário no sistema, pode ser que seja necessário você adequar os valores referentes ao seu openSSL e sua pass_phrase no seu arquivo lexik_jwt_authentication
 
 - Acesse o diretório frontend:
 
