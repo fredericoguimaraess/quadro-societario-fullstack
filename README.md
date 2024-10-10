@@ -17,6 +17,8 @@ senha: password
 
 - Inicie a aplicação rodando os comandos a seguir na raíz do projeto:
 
+- composer install
+
 (Acesse o arquivo .env e adeque as variáveis de acesso ao banco de dados)
 
 php bin/console doctrine:database:create
@@ -26,6 +28,8 @@ php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixtures:load (Para inserir dados de teste no banco de dados, ou se preferir pode adicionar manualmente acessando os endpoints)
 
 php -S localhost:8000 -t public
+
+- npm install
 
 - Acesse o diretório frontend:
 
