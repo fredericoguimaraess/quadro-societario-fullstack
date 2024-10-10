@@ -18,6 +18,7 @@ senha: password
 - Inicie a aplicação rodando os comandos a seguir na raíz do projeto:
 
 (Acesse o arquivo .env e adeque as variáveis de acesso ao banco de dados)
+
 php bin/console doctrine:database:create
 
 php bin/console doctrine:migrations:migrate
