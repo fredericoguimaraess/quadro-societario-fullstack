@@ -1,0 +1,24 @@
+<div class="container mx-auto p-4 bg-gray-900 text-gray-200">
+    <h2 class="text-2xl font-bold mb-12 text-center mt-24">Formulário de Sócio</h2>
+    <form (ngSubmit)="saveSocio()">
+      <div class="mb-4">
+        <label for="nome" class="block text-sm font-medium mb-1">Nome:</label>
+        <input type="text" id="nome" [(ngModel)]="socio.nome" name="nome" class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200" />
+      </div>
+      <div class="mb-4">
+        <label for="empresa" class="block text-sm font-medium mb-1">Empresa:</label>
+        <select id="empresa" [(ngModel)]="socio.empresa_id" name="empresa_id" class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+          <option *ngFor="let empresa of empresas" [value]="empresa.id">{{ empresa.nome }}</option>
+        </select>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+        Salvar
+      </button>
+    </form>
+    <div class="flex justify-center">
+      <button (click)="navigateTo('/dashboard')" class="w-48 mt-8 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+          Voltar
+      </button>
+    </div>
+  </div>
+  
